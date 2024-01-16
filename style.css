@@ -1,0 +1,770 @@
+*{
+    margin: 0;
+    font-family: serif;
+    border: border-box;
+    color: white;
+    text-decoration: none;
+}
+
+/* Scroll Box */
+.scroll-box{
+    position: fixed;
+    top: 210px;
+    height: 140px;
+    width: 260px;
+    background-color: transparent;
+}
+
+.scroll-box-p1{
+    color: rgb(155, 155, 155);
+    position: absolute;
+    top: 135px;
+    font-size: 14px;
+    left: 25px;
+    margin: 6px 0 0;
+    animation: arrow-animation 0.75s ease-in-out 0ms infinite normal;
+}
+
+.scroll-box-p1>i{
+    color: rgb(155, 155, 155);
+    font-size: 12px; 
+}
+
+@keyframes arrow-animation {
+    from { top: 135;}
+    to { top: 138px;}
+}
+
+.scroll-box-p2{
+    color: rgb(155, 155, 155);
+    position: absolute;
+    top: 160px;
+    font-size: 10px;
+    left: 20px;
+    margin: 6px 0 0;
+}
+
+.link-list{
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+}
+
+.link-list>li{
+    color: rgba(155, 155, 155);
+}
+.link-list>li>a{
+    color: rgb(155, 155, 155);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-box:hover .link-list>li>a{
+    opacity: 1;
+}
+
+.scroll-box:hover{
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.scroll-box:hover .link-list>li{
+    color: rgb(155, 155, 155);
+}
+
+.link-list>li>a:hover{
+    color: black;
+}
+
+.link-list>li>a:hover .link-list>li{
+    color: black;
+}
+
+/* MESSAGE BOX */
+.message-box{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    background-color: #1A1A1A;
+    top: 500px;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.alight:hover{
+    color: white;
+}
+
+.hover-bg:hover{
+    background-color: #262626;
+} 
+
+header{
+    background-color: #000000;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    padding: 16px 0;
+    margin: 0 95px;
+}
+
+.navbar-inside{
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar-left{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo{
+    height: 60px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    background-image: url(/WebDevelopment/Project/Mercedes-BenzG-Class/images/mercedes-logo.png);
+    background-size: cover;
+}
+
+.logo-text{
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.policy{
+    width: 600px;
+    height: 16px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.policy-text{
+    width: 160px;
+    height: 16px;
+    color: #BBBBBB;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16px 0 474px;
+}
+
+.navbar-right{
+    width: 380px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-searchbar{
+    width: 260px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+}
+
+.searchbar{
+    width: 260px;
+    height: 50px;
+    background-color: #262626;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.searchbar-text{
+    height: 13px;
+    font-size: 11px;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar-text>div{
+    width: 180px;
+    height: 13px;
+    color: #BBBBBB;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbar-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+}
+
+.searchbar-icon > div{
+    background-color: #262626;
+    padding: 1px 6px;
+}
+
+.searchbar-icon > div > i{
+    height: 16px;
+    width: 16px;
+    background-color: #262626;
+}
+
+.navbar-star, .navbar-user{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-star > div, .navbar-user > div{
+    height: 16px;
+    width: 16px;
+}
+
+.navbar-star > div > i, .navbar-user > div > i{
+    height: 13px;
+    width: 13px;
+}
+
+/* Pannel */
+.panel{
+    width: 100%;
+    height: 62px;
+    background-color: black;
+    margin: 0 95px;
+    font-size: 18px;
+    display: flex;
+    border-top: 1px solid #262626;
+}
+
+.panel-models{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-logo{
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #BBBBBB;
+}
+
+.models-text{
+    width: 109px;
+    height: 27px; 
+    color: #BBBBBB;
+}
+
+.model-text:hover .panel-car-logo{
+    color: #FFFFFF;
+}
+
+.panel-text{
+    padding: 16px;
+    color: #BBBBBB;
+}
+
+/* OVERVIEW */
+.overview{
+    height: 56px;
+    background-color: #FFFFFF;
+    padding: 0 96px;
+    position: sticky;
+    top: 0;
+}
+
+.overview-inner{
+    height: 56px;
+    width: 1180px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.overview-inner>div{
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    background-color: #d1d1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-text{
+    background-color: #d1d1d1;
+    color: #262626;
+}
+
+.message-box>div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* G CLASS POSTER */
+.g-class-poster-outer{
+    height:600px;
+    width: 100%;
+    background-image: url(/WebDevelopment/Project/Mercedes-BenzG-Class/images/g-class-poster.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 80px;
+}
+
+.g-class-poster{
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(to right, #262626, transparent 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-class-poster>div{
+    width: 1170px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-class-poster>div>div{
+    width: 1200px;
+    height: 182px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.poster-text{
+    height: 182px;
+    width: 502px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.poster-text-1{
+    font-size: 64px;
+    color: #FFFFFF;
+}
+
+.poster-text-2{
+    font-size: 18px;
+    color: #BBBBBB;
+}
+
+/* FEATURES */
+.features{
+    height: 460px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-inner{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.features-ability, .features-torque, .features-output, .features-displacement{
+    height: 300px;
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.features-ability-inner{
+    height: 135px;
+    width: 253px;
+    padding: 8px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.features-torque-inner{
+    height: 195px;
+    width: 253px;
+    padding: 8px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.features-output-inner{
+    height: 300px;
+    width: 253px;
+    padding: 8px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.features-displacement-inner{
+    height: 107px;
+    width: 253px;
+    padding: 8px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* Design of G-class */
+.design-heading{
+    height: 60px;
+    padding: 80px 0 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.design-heading>div{
+    height: 60px;
+    width: 1170px;
+    padding: 0 16px;
+}
+
+.design-heading>div>h2{
+    font-size: 48px;
+    color: #333333;
+}
+
+/* G Class Video */
+.g-class-video{
+    height: 880px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0 80px;
+}
+
+.g-class-video>video{
+    height: 690px;
+    width: 1380px;
+}
+
+.video-caption{
+    width: 1200px;
+    height: 70px;
+}
+
+.video-caption>p{
+    color:#333333;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* Exterior */
+.exterior{
+    height: 220px;
+    width: 100%;
+    padding: 80px 0 48px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.exterior-inner{
+    width: 1220px;
+    height: 220px;
+    margin: 0 16px;
+}
+
+#exterior-p1{
+    height: 22px;
+    width: 1220px;
+    padding: 0 16px;
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #767676;
+}
+
+.exterior-inner>h2{
+    width: 1220px;
+    height: 60px;
+    color: #333333;
+    font-size: 48px;
+    padding: 0 16px;
+}
+
+#exterior-p2{
+    width: 780px;
+    height: 110px;
+    font-size: 18px;
+    color: #767676;
+    padding: 0 16px;
+}
+
+/* Exterior Options */
+.exterior-opt-outer{
+    height: 881px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.exterior-opt{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #767676;
+
+}
+
+.exterior-options{
+    height: 50px;
+    width: 1170px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.exterior-options>button{
+    font-size: 16px;
+    color: #767676;
+    background-color: #ffffff;
+    border: none;
+    padding: 14px 15px;
+}
+
+.exterior-options>button:hover{
+    border-bottom: 2px solid rgb(0, 0, 255);
+    background-color: #d1d1d1;
+}
+
+.exterior-opt-img{
+    width: 100%;
+    height: 690px;
+    background-image: url(/WebDevelopment/Project/Mercedes-BenzG-Class/images/side-img.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exterior-design-heading{
+    width: 1220px;
+    height: 70px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* Exterior Images */
+.exterior-img{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.exterior-image{
+    width: 1220px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exterior-image-1{
+    height: 415px;
+    width: 350px;
+    background-image: url(/WebDevelopment/Project/Mercedes-BenzG-Class/images/front-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.exterior-image-2{
+    height: 415px;
+    width: 400px;
+    background-image: url(/WebDevelopment/Project/Mercedes-BenzG-Class/images/rear-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.exterior-image-3{
+    height: 415px;
+    width: 350px;
+    background-image: url(/WebDevelopment/Project/Mercedes-BenzG-Class/images/front-side-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* FOOTER */
+.footer{
+    height: 990px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.up-button{
+    width: 1192px;
+    height: 144px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up-button>a{
+    height: 80px;
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #000000;
+}
+
+.up-button-arrow{
+    height: 48px;
+    width: 48px;
+    font-size: 36px;
+}
+
+.up-button-text{
+    height: 24px;
+    width: 20px;
+    font-size: 24px;
+    position: relative;
+    left: -5px;
+}
+
+.upper-footer{
+    width: 1191px;
+    height: 442px;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0 0;
+    margin: 0 0 64px;
+}
+
+.upper-footer>ul{
+    width: 1191px;
+    height: 442px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start ;
+    align-items: start;
+}
+
+.upper-footer>ul>li{
+    font-size: 18px;
+    color: #FFFFFF;
+    list-style: none;
+    padding: 0 0 16px;
+}
+
+.upper-footer>ul>li>a{
+    font-size: 16px;
+    color: #BBBBBB;
+}
+
+.upper-footer-heading{
+    color: #FFFFFF;
+}
+
+.upper-footer>ul>li>a:hover{
+    color: #FFFFFF;
+    border-bottom: 1.5px solid #FFFFFF;
+}
+
+.lower-footer{
+    width: 1130px;
+    height: 143px;
+    padding: 32px 0;
+    border-top: 1.25px solid #BBBBBB;
+    display: flex;
+}
+
+.left-lower-footer{
+    width: 860px;
+    height: 143px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    margin: 0 24px 0 0;
+}
+
+.left-lower-footer>div{
+    width: auto;
+    height: auto;
+    color: #BBBBBB;
+    font-size: 16px;
+    margin: 0 16px 0 0;
+    list-style: none;
+    border-bottom: 1.25px solid transparent;
+}
+
+.left-lower-footer>div:hover{
+    color: #FFFFFF;
+    border-bottom: 1.25px solid #FFFFFF;
+}
+
+.right-lower-footer{
+    height: 143px;
+    width: 246px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-lower-footer>li{
+    list-style-type: none;
+    width: 24px;    
+}
+
+.right-lower-footer>li>i{
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+}
