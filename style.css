@@ -4,6 +4,7 @@
     border: border-box;
     color: white;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /* Scroll Box */
